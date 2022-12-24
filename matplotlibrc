@@ -1,0 +1,35 @@
+# Für weitere Informationen siehe:
+# https://matplotlib.org/stable/tutorials/introductory/customizing.html#the-matplotlibrc-file
+
+# Höhere Auflösung
+figure.dpi: 200
+figure.figsize: 7, 4
+
+# LaTeX-Schriftart für Beschriftungen (cm = Computer Moderm)
+font.family: serif
+font.serif: cm
+
+# LaTeX-Schriftart für Matheumgebungen
+mathtext.fontset: cm
+text.usetex: True
+
+# Achsengitter
+axes.grid: True
+grid.linewidth: 0.3
+grid.alpha: 0.5
+
+# Dünnere Linien und kleinere Marker
+lines.linewidth: 1
+lines.markersize: 4
+
+# Nutze eingestellte Sprache zur Formatierung von Zahlen
+axes.formatter.use_locale: True
+
+# Lade LaTeX-Pakete
+text.latex.preamble: \usepackage{icomma} \usepackage{siunitx} \sisetup{detect-all} \usepackage{amsmath} \usepackage{amssymb} \usepackage{physics}
+
+# Größere Marker in Legenden
+legend.markerscale: 2
+
+# Besseres automatisches Layout
+figure.constrained_layout.use: True
